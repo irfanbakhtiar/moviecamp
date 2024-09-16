@@ -142,7 +142,11 @@ const Movies = () => {
       <div className="grid items-start gap-2 mx-auto md:gap-6 lg:grid-cols-2 lg:max-w-fit">
         <GetMovies />
         {isModalOpen && (
-          <MovieDetail movie={selectedMovie} closeModal={closeModal} />
+          <MovieDetail
+            isOpen={isModalOpen}
+            movie={selectedMovie}
+            closeModal={closeModal}
+          />
         )}
       </div>
       {errorFind && (

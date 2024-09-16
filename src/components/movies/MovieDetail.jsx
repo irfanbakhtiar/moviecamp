@@ -1,6 +1,20 @@
+import { useEffect } from "react";
+
 const imageUrl = process.env.REACT_APP_BASEIMGURL;
 
-const MovieDetail = ({ movie, closeModal }) => {
+const MovieDetail = ({ isOpen, closeModal, movie }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   if (!movie) return null;
 
   return (
