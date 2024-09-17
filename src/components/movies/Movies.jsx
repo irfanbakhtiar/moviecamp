@@ -154,7 +154,7 @@ const Movies = () => {
       )}
 
       {loading && (
-        <p className="flex justify-center pt-2 text-2xl font-bold text-gray-700 uppercase">
+        <p className="flex justify-center pt-2 text-base font-bold text-orange-400 uppercase md:text-xl">
           Loading movies...
         </p>
       )}

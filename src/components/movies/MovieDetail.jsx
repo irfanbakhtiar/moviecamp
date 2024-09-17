@@ -19,7 +19,7 @@ const MovieDetail = ({ isOpen, closeModal, movie }) => {
 
   return (
     <div className="fixed top-0 left-0 flex items-center justify-center w-full h-full py-10 bg-black bg-opacity-50">
-      <div className="w-full max-w-md max-h-full overflow-y-auto rounded-md bg-warm sm:max-w-xl sm:rounded-2xl">
+      <div className="w-full h-screen max-w-md overflow-y-auto rounded-md sm:max-h-full bg-warm sm:max-w-xl sm:rounded-2xl">
         <div className="w-full">
           <div className="my-20 max-w-[350px] sm:max-w-md mx-auto">
             <div className="flex justify-center">
